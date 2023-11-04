@@ -22,6 +22,13 @@ sed -i 's/\[x\]/\[ \]/g' README.md
 
 This command will replace '[x]' with '[ ]' in the README.md file.
 
+I am using Powershell and these are the steps:
+```
+1. cd to the TryHackMe directory
+2. (Get-Content README.md) -replace '\[x\]', '[ ]' | Set-Content README.md as a replacement of the command above.
+3. Check the TryHackMe folder in File Explorer
+```
+
 <br>
 
 ### 4. Keep track of which rooms you have complete
